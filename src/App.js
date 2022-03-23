@@ -6,17 +6,17 @@ import React,{useState} from 'react';
 
 // import Blmode from './components/Blmode';
 import Navbar from './components/Navbar';
-import Blmode from './components/Blmode';
+// import Blmode from './components/Blmode';
 import TextForm  from './components/TextForm';
 import Alert  from './components/Alert';
 
 
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
+// import {
+//   BrowserRouter as Router,
+//   Switch,
+//   Route,
+//   Link
+// } from "react-router-dom";
 
 
 
@@ -73,28 +73,28 @@ function App() {
 
   return (
    <>
-    <Router>
+    {/* <Router> */}
   
 <Navbar  name="Handicraft" linka="About"  mode={mode}  toggleMode={toggle} />
 
  <Alert  alert={alert}  />
   
         <div className="container my-3">
-            <Switch>
+            {/* <Switch>
               <Route path="/blmode">
               <Blmode    />  
               </Route>
             
-              <Route path="/gh">
+              <Route path="/gh"> */}
 
               <TextForm showalert={showalert}   heading="Enter the text to analyze"  mode={mode}  toggleMode={toggle} />
-
+{/* 
               </Route>
 
-            </Switch>
+            </Switch> */}
           </div>
      
-          </Router>
+          {/* </Router> */}
   </>
   );
 }
